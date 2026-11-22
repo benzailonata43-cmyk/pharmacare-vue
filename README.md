@@ -1,38 +1,77 @@
-# pharmacare
 
-This template should help get you started developing with Vue 3 in Vite.
+# PharmaCare — інтернет-каталог товарів для здоров'я
 
-## Recommended IDE Setup
+## Про проєкт
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+PharmaCare — навчальний вебзастосунок, розроблений на Vue.js 3 у межах дисципліни «Веб-технології».
 
-## Recommended Browser Setup
+Мета проєкту — створити інтерактивний каталог товарів із пошуком, фільтрацією та кошиком покупок.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Функціональні можливості
 
-## Customize configuration
+- Каталог товарів із фотографіями, назвами та цінами.
+- Пошук товарів за назвою.
+- Фільтрація за категоріями.
+- Додавання товарів до кошика.
+- Зміна кількості та видалення товарів.
+- Автоматичний розрахунок загальної вартості.
+- Збереження кошика в localStorage.
+- Адаптивний дизайн для комп'ютерів і смартфонів.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Використані технології
 
-## Project Setup
+- HTML5
+- CSS3
+- JavaScript
+- Vue.js 3 (Composition API)
+- Vite
+- Git і GitHub
+- GitHub Pages
 
-```sh
+## Запуск проєкту
+
+Для локального запуску необхідно встановити Node.js.
+
+1. Клонувати репозиторій:
+
+```bash
+git clone https://github.com/benzailonata43-cmyk/pharmacare-vue.git
+```
+
+2. Перейти до папки проєкту:
+
+```bash
+cd pharmacare-vue
+```
+
+3. Встановити залежності:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+4. Запустити сервер розробки:
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+5. Відкрити локальну адресу, яку покаже Vite.
 
-```sh
-npm run build
-```
+## Структура проєкту
+
+- `src/App.vue` — головний компонент застосунку.
+- `src/components/ProductCard.vue` — картка товару.
+- `src/components/CartItem.vue` — товар у кошику.
+- `src/data/products.js` — дані каталогу.
+- `public/images/` — фотографії товарів.
+
+## Демонстрація
+
+Скриншот головної сторінки буде додано нижче.
+
+## Автор
+
+Бенза Ілона, група ТА-43.
+
+Навчальний проєкт, 2026 рік.
