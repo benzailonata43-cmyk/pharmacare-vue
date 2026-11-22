@@ -8,13 +8,14 @@ defineProps({
 })
 
 const emit = defineEmits(['add-to-cart'])
+const imageBase = import.meta.env.BASE_URL
 </script>
 
 <template>
   <article class="product-card">
     <div class="product-image">
       <img
-        :src="product.image"
+        :src="imageBase + product.image.replace(/^\//, '')"
         :alt="product.name"
         width="500"
         height="400"

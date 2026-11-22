@@ -4,6 +4,9 @@ import ProductCard from './components/ProductCard.vue'
 import CartItem from './components/CartItem.vue'
 import CheckoutForm from './components/CheckoutForm.vue'
 import { products } from './data/products.js'
+const imageBase = import.meta.env.PROD
+  ? '/pharmacare-vue'
+  : ''
 
 // Пошук, фільтрація та сортування
 const search = ref('')
